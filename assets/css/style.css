@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.formato, .formulario input, .formulario textarea {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.navbar {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /* background-color: rgb(49, 7, 77);    rgb(233, 211, 219)     */
+  /* uso gradiente */
+  /* background: linear-gradient(to right, #480048, #C04848); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+         */
+  background: -webkit-gradient(linear, left top, right top, from(#f8dcc9), to(#C04848));
+  background: linear-gradient(to right, #f8dcc9, #C04848);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar ul li {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.nav-link {
+  color: white;
+}
+
+/* Este es para el elemento activo lo puedes omitir si asi deseas
+.navbar-light .navbar-nav .active>.nav-link  {
+    color: red;
+} */
+main {
+  background-color: #f7cfc7;
+  color: #9e0652;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.texto {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.footer {
+  background-color: #494848;
+  color: white;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer img {
+  width: 30px;
+  padding: 5px;
+}
+
+/*Index*/
+.carousel {
+  display: none;
+}
+
+.inicioResponsive {
+  width: 100%;
+}
+
+.inicioResponsive img {
+  width: 100%;
+}
+
+.inicioResponsive h1 {
+  color: white;
+}
+
+.inicioResponsive p {
+  color: white;
+}
+
+/*Productos*/
+.card {
+  background-color: rgba(143, 127, 127, 0.1) !important;
+}
+
+.card img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  border-radius: 10px;
+}
+
+.cardAnimada:hover {
+  -webkit-transform: translate(10px, 20px);
+          transform: translate(10px, 20px);
+}
+
+.btn {
+  background-color: rgba(134, 131, 130, 0.4);
+  border-color: #9e0652;
+}
+
+/*Quienes Somos*/
+.fondoContenedor {
+  background-image: url("../img/staff.jpg");
+  background-size: cover;
+  color: #9e0652;
+}
+
+.transparente {
+  background-color: rgba(134, 131, 130, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  padding: 10px;
+}
+
+.lista {
+  width: 90%;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+
+.lista li {
+  line-height: 2;
+}
+
+/*Contacto*/
+.formulario {
+  width: 100%;
+}
+
+.formulario textarea {
+  width: 350px;
+  height: 100px;
+}
+
+/*@media*/
+@media (min-width: 768px) {
+  .main {
+    /*establezco la imagen de fondo para todas las páginas*/
+    /*vh representa un % de la ventana gráfica  */
+    min-height: 100vh;
+  }
+  .texto {
+    font-size: 25px;
+  }
+  .carousel {
+    display: block;
+  }
+  .inicioResponsive img {
+    display: none;
+  }
+  .inicioResponsive h1 {
+    display: none;
+  }
+  .inicioResponsive p {
+    display: none;
+  }
+  .fondoContenedor {
+    width: 100%;
+    height: 400px;
+  }
+  .lista {
+    font-size: 20px;
+  }
+  .lista li {
+    line-height: 3;
+  }
+  .footer {
+    font-size: 12px;
+  }
+  .footer img {
+    width: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

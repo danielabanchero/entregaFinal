@@ -1,0 +1,13 @@
+main{    
+    background-color: $colorPrimario;
+    color: map-get($font, color);
+}
+
+h1{
+    font-weight: map-get($font, weight);
+}
+
+.texto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: map-get($font, size);            
+}

@@ -1,0 +1,16 @@
+
+.formulario{
+    width: 100%;
+
+    input{
+        @extend .formato;
+        
+    }
+
+    textarea{
+        @extend .formato;
+        width:350px;
+        height:100px;
+    }
+    
+}
