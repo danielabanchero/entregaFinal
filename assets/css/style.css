@@ -33,13 +33,9 @@
   color: white;
 }
 
-/* Este es para el elemento activo lo puedes omitir si asi deseas
-.navbar-light .navbar-nav .active>.nav-link  {
-    color: red;
-} */
 main {
-  background-color: #f7cfc7;
-  color: #9e0652;
+  background-color: #e4beba;
+  color: white;
 }
 
 h1 {
@@ -80,6 +76,10 @@ h1 {
   width: 100%;
 }
 
+.inicioResponsive .card {
+  border: none;
+}
+
 .inicioResponsive img {
   width: 100%;
 }
@@ -109,19 +109,19 @@ h1 {
 }
 
 .btn {
-  background-color: rgba(134, 131, 130, 0.4);
-  border-color: #9e0652;
+  background-color: rgba(148, 90, 84, 0.4);
+  border-color: white;
 }
 
 /*Quienes Somos*/
 .fondoContenedor {
   background-image: url("../img/staff.jpg");
   background-size: cover;
-  color: #9e0652;
+  color: white;
 }
 
 .transparente {
-  background-color: rgba(134, 131, 130, 0.4);
+  background-color: rgba(148, 90, 84, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,8 +129,6 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 90%;
-  padding: 10px;
 }
 
 .lista {
@@ -158,7 +156,6 @@ h1 {
 /*@media*/
 @media (min-width: 768px) {
   .main {
-    /*establezco la imagen de fondo para todas las páginas*/
     /*vh representa un % de la ventana gráfica  */
     min-height: 100vh;
   }

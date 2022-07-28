@@ -1,15 +1,19 @@
 .inicioResponsive{
-    width: 100%;    
+    width: 100%;  
+
+    .card{
+        border: none;
+    }
     
     img{
         width: 100%;
     }
 
     h1{
-        color: $colorLetra;
+        color: $colorSecundario;
     }
 
     p{
-        color: $colorLetra;
+        color: $colorSecundario;
     }
 }

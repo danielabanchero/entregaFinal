@@ -3,20 +3,20 @@
     background-image: url("../img/staff.jpg");
     background-size: cover;   
     color: map-get($font, color);    
+    
 }
 
 .transparente{
     background-color: $colorTerciario;       
     display: flex;
-    flex-direction: column;
-    // margin: 10px 0;    
-    @include container(90%,10px);
+    flex-direction: column;    
 }
+
 .lista{      
     @include container(90%,20px);
     font-size: map-get($font, size-sm);    
     font-weight: map-get($font, weight); 
-    color: $colorLetra;
+    color: $colorSecundario;
 
     li{
         line-height: map-get($font, height);            
